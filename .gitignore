@@ -1,0 +1,74 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production build files
+/build
+/dist/
+
+# Miscellaneous
+.DS_Store
+*.pem
+
+# Local environment variables
+.env*.local
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+
+# TypeScript cache files
+*.tsbuildinfo
+
+# Large media files - Consider Git LFS for these if they need to be versioned
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.mp3
+*.wav
+*.ogg
+*.flac
+# Add other large image/raw formats if necessary, e.g., *.psd, *.ai
+
+# Archives and Backups
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.tmp
+*.swp
+
+# Database files (if local and not part of the versioned project)
+*.sqlite
+*.sqlite3
+*.db
+*.sql # Be careful with this if you have schema files you WANT to version
+
+# Optional User-specific files
+.env.local.user 
+node_modules/*
