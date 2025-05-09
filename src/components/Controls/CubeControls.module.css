@@ -1,0 +1,79 @@
+.controlsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Or adjust as needed */
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.stats p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.resetButton {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.resetButton:hover {
+    background-color: #d32f2f;
+}
+
+.buttonsGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 buttons per row */
+    gap: 8px;
+    width: 100%;
+}
+
+.moveButton {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.moveButton:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .buttonsGrid {
+        grid-template-columns: repeat(
+            3,
+            1fr
+        ); /* 3 buttons per row on smaller screens */
+    }
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
